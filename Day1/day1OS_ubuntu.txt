@@ -1,0 +1,326 @@
+Operating System
+
+-one word: resource management
+
+-act as interface between user of computer and hardware of computer
+
+~user 		language dependent
+~gui
+api call 
+os		Language dependent
+
+kernel
+low level system calls
+device driver		low level/shell script
+
+device controller
+~device
+
+powerpoint
+
+what is os?
+computer system architecture
+os booting process	InterviewQ) what is booting process? what is POST? 
+osbooting process
+
+Archival shifting down
+
+register	Process-CPU	current KB bytes/KB
+
+cache		most recent memory buffer memory	area MB	
+
+primary RAM	SRAM/DRAM 	block 1GB
+
+secondary storage	ssd/hdd	file 10GB	TB
+
+as we go up in triangle speed increase space decrease cost increase
+
+CACHE CURD cache management 
+	- make data available
+		- data available Hit good system Max Hit(locality of reference) 
+			-> way to refill in advance 
+				- partial refill		happens based on Address 
+				- temporal refill	happens based on Time
+		- data not available Miss u will find data again time will increase
+
+continuous memory  
+discrete memory	
+	- first fit	algorithm 		 
+	- Best Fit	algorithm 
+	- Worst Fit 	algorithm 	
+
+paging divides frames into fixed size 
+
+virtual paging
+	current - next - last
+
+memory: div in fixed size frames
+data: div in fixed size pages 
+
+Function of OS
+
+	security is outside to inside
+
+	process to process  Protection
+
+Design Issue of OS
+	blackbox.io/gemini/
+
+Policy and mechanism 
+what user want policy
+mechanism  
+
+DESIGN APPROACHES
+
+Layered approach
+3 types of KERNALS
+	Hybrid Kernel 
+	
+OS
+Types
+	- On user single multi user (ACTIVE SINGLE USER) -> Social Media
+	- Task 
+		- uni task
+		- multi task
+			- parallel
+			- time sharing
+
+Hooping is best for Kali Linux
+
+5 Level of Language 
+
+1GL: Machine Language 01010011
+
+2GL: Assembly Language operation code: OP Code
+					ADD a,b --3f
+
+this languages where greatly dependent on hardware.
+
+2.5 GL : Shell Script
+
+3GL: High level Language: H/W independent, English like, user understandable and readable language
+HLL<------------------------------------------ Compiler  ---------------------------------------------->M/C
+  					Translate, syntax check, semantic check
+						INTERORETER
+
+Property: WORA
+
+4 GL: SQL--Databases language that supports CRUD / ACID
+
+5 GL:AI/NLP(prolog) chatgpt in c++ lmm supports 
+
+Shell script-2.5 GL so less readable, strict syntax 
+	dynamic casted(no float) MCQ 
+
+syntax------------------------------------------------------------------------------------------------semantics
+grammar of programming										
+what and how to write?
+
+semantics: is it allowed wrt assignment/use 	it is asked
+int i=10;
+<dt><id>=<value>;//syntax
+char x=9;//semantics stops this
+
+agecredintals
+
+shell---directly communicating with kernal--hence fast
+
+use: on servers to do sequenced tasks
+	use for automation of usual task
+	script is collection of commands to be executed in some sequence as written (interpreted)
+
+
+Shell types:
+BASH (Bourne Again Shell)
+CSH (C Shell)
+KSH (Korn Shell)
+
+
+Kernal
+
+$nano first.sh  to open file
+
+in shell
+#!/bin/bash you have to give it everytime it tell whom to go 
+echo "Hi this is my First code"	python print ctrl-o-enter ctrl-x you will come out
+
+$chmod changemode 777 all given in ppt 0-7 first.sh run
+
+$./first.sh
+
+in shell 
+read -p "Who are you?" name	comment #read is for input & name is variable
+-p "Who are you?" name prompt to display on the screen like input in python
+echo "hi, $name"  variable to access use $ #is used to access variable's data
+
+
+tokenization in shell is by _ space 
+if you have 3 data input then it will store only 2 values and 3rd value in second
+
+Arithmetic operators $((a+b)) or $(($a+$b))
+
+Swapping numbers
+if you want to store any value you have to use $a in the values
+temp=$a
+a=$b
+b=$temp
+
+math.sh	it doesnot have floating poin it does dynamic casting it take int as int String as String
+read 2 numbers from user
+cal & print +, -, *, /
+
+-e is for \n to print on next line 
+
+tokenization it depends on numbers of spaces  
+
+add.sh
+
+positional argument
+when calls ./add.sh 10 20 
+10 + 20 = 30
+
+Conditional Statement
+if test expression
+then
+	command
+fi
+
+
+
+if [ $age -ge 18 ]
+
+-gt greater than	
+-lt less than	
+-eq equal to
+
+take data from user can vote or cannot vote
+
+cat vote.sh -- will show you the content in the file
+
+it directly talk to kernel 
+
+Loops
+in loops we use <= all the arithmetic operations
+
+for i in {start..end}
+do echo ""
+done
+
+for (( i=$start; i<=$end;i++ ))
+do echo "$i"
+done
+
+#accept start and end and print list
+#start and end can be in any order
+#start:3 end:6 3,4,5,6
+#start:3 end:-2  3,2,1,0,-1,-2,-3
+
+   /|
+  / |
+ /  |
+/___|  counter i=0, i+k, i <= n <=
+
+|\
+| \
+|  \
+|___\  counter down i=n, i-k, i>=0/1  >=
+
+
+DoWhile loop
+
+while [ $a -lt 10 ]
+do 
+  echo $a
+  a=$(($a+1))
+done
+
+until command
+
+until [ ! $a -lt 10 ]
+do
+echo $a
+a=$(($a+1))
+done 
+
+Switch case:
+
+case variable
+ value1)
+ commands
+ ;;
+ value2)
+ commands
+ ;;
+ *)
+ commands
+ ;;
+esac
+
+print 5 to 1
+
+IMP
+Q create a file user have all the write  read and executed group public only have read ##751##
+
+
+
+USE CO-PILOT 
+
+INTERVIEW CONDITIONAL STATEMENT
+Q What program is made up of?
+sequence, condition, loops.
+
+operators, conditional, function, loops, collection class, data Structure, string class, 
+syntax rata, logic understand, code in logical manner 
+understand code by doin it on paper 
+question break the them
+
+
+
+
+INTERVIEW say NO if you don't know 
+	- AS IF NOW I AM NOT ABLE TO RECOLLECT 
+	- MAKE INTRODUCTION READY 5 THINGS /DONT STOP UNLESS INTERVIEWR SAID TO DO SO
+		- Into 
+		- Education 
+		- Where you from/native place
+		- talk to about family in BRIEF for family background
+		- PROJECTS what you have work on
+		Q why you want to work with our company? 
+			- know what company is 
+		Q where you see yourself in next 5 years?
+			- i want to be asset for the company
+			- Practice 
+		Q Any questions for us? Trump Card
+			- NO ask
+			- technology you want to work in play about strong point
+			- recent technology company have invested in and what you can do
+		- Interview - Selling yourself to company
+		Q What is your salary expectations 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,364 @@
+Commands:
+
+ls - list command for Linux shell (dir-windows)
+
+ls -l  for detail list with description -rwx read write execute 
+	Q. how to detail of each file
+	user group public global access
+
+ls -a for hidden files
+
+ls -a -l hidden detail file
+
+.sh files in green
+directory blue
+files txt for white
+
+perform list of all files in ascending order of files with alphabetical(size)
+sorting ls -S list | ls -s alphabetical order total count
+capital S -S sorts and view on basis of size Max to Min 
+lowercase s -s in a-z manner also gives count of files
+-l details with all info
+-a hidden files
+YOU CAN MAKE COMBINATION OF VARIOUS COMMANDS
+
+ls -lt Sorted order of Modified time
+
+for help:
+Q Maximum detailed info by which command will give you detailed about the command
+info <command>  briefly about the command	DETAILED INFO
+man <command> if you want to see manual of any command 
+<command> --help lit version of man 
+
+FILE HANDLING:
+	server create log file 
+MAKE FILE
+touch myfile.txt creates a blank file with myfile.txt or change the timestamp
+if file exist it will update the timestamp
+
+touch: creates blank/empty file
+	if already exists then update the time stamp of last access
+	you can add multiple files by creating spaces
+
+Cloud distributed data
+
+Q What is difference between duplicate & replicate data?
+Replicate & duplicate is making exact copy but in replication we maintain consistency with original data, 
+(databases---blockchain---replicated always)
+majority-update
+duplicate nothing as such done.
+
+COPY FILE
+cp file1 file2 oldfile -> newfile
+Q how will you copy entire directory
+
+cp copy file
+cp <source file> <destination file> #file
+cp -r <directory_source> <directory)dest>
+-r recursive call	
+
+mv to move file from one to other location
+mv <file> <location>
+mv <old_filename> <new_filename>#rename it is used to rename file
+Q How to rename the file in linux
+
+
+local path
+/sub dir/file
+
+absolute path
+./sub/sub/file
+.:home dir
+
+mkdir make directory
+
+Q List all text file in dir
+ls *.txt
+
+Q list all the text file in descending order of their size
+ls -l -S *.txt
+
+Q Most recently sh file
+ls -lt *.sh
+
+Q 
+ls -S -lt *.sh
+
+--------------------------------------
+
+wc word and line count
+wc -l file.txt -- line
+wc -w file.txt --- words
+
+Q Extra space given in the file will it count the word?
+No
+character count in bytes
+
+How to read data from file------------------------
+head filename 			by default will run only 10 file
+head -n <count> filename
+
+similarly for tail
+tail filename
+
+.dat is the extension		
+
+how to add 2 commands on single line by using && 
+
+head -n 2 file1.dat && tail -n 2 file1.dat
+
+&& will combine output of 2 file************************************
+
+
+Part of area/data
+first 7 nikalo last 3 lin read from 7 line read 3 line
+head -n 7 file1.txt | tail -n 3
+
+head -n 7 file1.dat || tail -n 3 file1.dat
+
+if you want to skip 
+tail -n +3 first1.dat
+
+
+cat -> Display content of file on terminal 
+cat > name_of_file it will allow to add new file 
+	it overrides not append
+cat > name_of_file  creates file and adds given data, if file already there will overwrite
+
+cat >> name_of_file  creates file and adds given data, if file already there will append new data at the end 
+
+cat file_1 file_2> file_to_write: Combines file 1, 2 to newly created file
+
+cat >> info.txt	append in the file
+
+CONTENT OF THE FILE	
+grep: general matching regular expressions pattern matching
+	searching data on basis of RE/Pattern generally for sorting
+
+Regular Expresssions
+
+grep 'string' file  
+
+grep -i 'string' file searches without case sensitivity 
+
+pattern to work with we have ^\
+
+grep -v "string" file --= line that is not having given string
+
+grep -n "string" file gives line number :
+
+grep 'is' testfile.txt
+
+grep 'this' testfile.txt.dat | wc-l
+grep 'this' testfile.txt | wc-w
+
+grep 'data' testfile.dat
+
+
+nano searching.sh
+
+look for the file_create.sh
+
+read -p "Enter ur mesg:" user_
+
+Q 
+nishkil for objective c
+
+
+VVIMP *********************************
+TIME AND DATE(Max questions)
+date will print the current time and date
+we need to create format + to print year date time etc
+see for date --help
+
+date -d 'next week' '+%d/%m/%Y' for next week
+$ echo date
+
+Q generate a file with the current date and time in the fiel
+
+
+line by line
+less <file>: give data page by page ---used with large file
+large file page by page
+
+less +F <line number> File
+
+less +F  10 file1.dat
+
+less -l 'search_data' file
+
+
+-------------------------------AFTER BREAK---------------------------------------
+
+sed  used to search and will replace it the value
+
+awk text processing 
+
+cut delete certain line / data c for column or r row
+
+sort is used to sort in ascending or descending order it sort when it in different line
+	cat > for_sort.txt
+	sort for_sort.txt
+
+uniq removes duplicate lines from a sorted file.
+
+tee reads input from standard input and writes it to both standard output & one or more files
+
+pwd current working directory 
+
+ln symbolic link or link to other file or directory
+
+less you need to sudo display long text file
+
+uname basic info about operating system current version
+
+whoami display active username id shows id 
+
+tar used to extract compressed files
+
+zip used to compress file
+
+diff command used to find difference between 2 files
+	diff if only line 1 4 7 has difference 
+		1c1
+		4c4
+		7c7
+	diff if only line 1,2,3,7 had difference
+		1,3,c1,3
+		7c7
+
+Q Which of the following is corrupt output?
+
+cmp if 2 files are identical to each other True or False.
+
+export used to create export environment variable in Linux
+
+zip archive.zip file1.txt file2.txt
+
+Q What kind of compression?
+aaaaaaaabbbbbbbbccc--ASCII- *8bit-160bits
+8a9b3c-48bits
+
+Huffman coding:
+most frequently occurring--replaced with smallest code
+color-60times--24bits--8bit
+color-1-40bits
+
+rle: run length and coding & hamming code huffing code
+
+ssh establish a secure shell connection
+
+service start or stop services in linux
+
+ps display active process id 
+
+kill active processes by process ID
+
+df used to display disk filesystem information in Linux
+df -u user understandable format
+
+mount mounting pendrive or external drive cloud mount
+
+chown used to granting ownership of files or folders 
+
+ifconfig is very much targeted to work on 
+
+traceroute used to trace all network
+
+sudo apt for download files or like import
+
+su - super user to open also sudo -i
+
+
+ufw configure and manage TCP and IP PORT
+
+sudo apt install firefox to download file from the 
+
+sudo apt update it can update Linux
+
+cal used to show calender	
+
+alias give new name as custom shortcut 
+
+where is locate binary, source, and manual page for command 
+
+whatis give one information but not recent info about the command
+
+top ALT+CTRL+DEL same as that 
+
+useradd and useraccess command
+
+
+************************************************
+1>->1000 100->1
+2>Skill set improve 
+	your own notes
+	create 1,2,3 for system 
+		->Technology you love and you good at
+			resume: 1 project
+		->Technology you ok and you good at
+		->Technology you ok and you ok at
+3> practice--knowing lang--application
+            syntax --------knowing how to and where to use
+4>coding know---programming--logic
+				-see problem--never code directly
+				-break-->visual breakup
+				-algorithm (basic steps)
+				-OOP system/methodology it is way of thinking on solutions, where we start from o/p needed, process t get it and input needed
+
+wrap to print area of circle
+1. output: area of circle --- process:3.14*r*r ---> input: r
+benefit: natural, fast, reuse 
+
+2 ways of learning
+QBL: Question Based Learning
+	n Questions-->solve->n logics
+PBL: Project Based Learning
+	Topic-build system--learn
+20% - 80%
+
+5 hrs sleep 
+peer to peer learning
+rubbered duck up method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
